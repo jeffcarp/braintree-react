@@ -2,10 +2,9 @@
   "name": "braintree-react",
   "version": "1.0.0",
   "description": "",
-  "browser": "dist/braintree-react.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "browserify main.js > dist/braintree-react.js"
+    "build": "browserify index.js -s btreact > dist/braintree-react.js"
   },
   "repository": {
     "type": "git",
