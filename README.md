@@ -1,6 +1,6 @@
 # Braintree React Component
 
-Easier than sticking cash in a dirty envelope and mailing it to a company.
+Easier than sticking cash into a dirty envelope and mailing it to a company.
 
 ## Usage
 
@@ -45,6 +45,6 @@ View example integrations [here](examples).
   - If there is sufficient interest, we can start building out the custom integration. (Note that since January 2015, using anything other than DropIn means you can no longer be SAQ-A).
 
 ## To-Dos
-- [ ] Testing
+- [x] Testing (sort of)
 - [ ] Allow arbitrary configuration via props
 - [ ] Add Braintree integrations beyond Drop-In (PayPal, Coinbase, etc)
