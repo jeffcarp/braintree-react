@@ -2,9 +2,12 @@
   "name": "braintree-react",
   "version": "1.0.0",
   "description": "",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "browserify index.js -s braintreereact > dist/braintree-react.js"
+    "build": "npm run build-cjs && npm run build-html",
+    "build-html": "browserify index.js -s braintreereact -u react > dist/braintree-react.js",
+    "build-cjs": "browserify index.js > dist/braintree-react-cjs.js"
   },
   "repository": {
     "type": "git",
@@ -12,6 +15,12 @@
   },
   "author": "",
   "license": "ISC",
+  "keywords": [
+    "braintree",
+    "payment",
+    "credit card form",
+    "react-component"
+  ],
   "devDependencies": {
     "braintree-web": "^2.3.3",
     "browserify": "^8.1.3",

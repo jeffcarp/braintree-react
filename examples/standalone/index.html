@@ -1,6 +1,4 @@
 <html>
-  <head>
-  </head>
   <body>
     <h1>Test Payment Form</h1>
     <form action="/transactions" method="GET">
@@ -14,7 +12,7 @@
 
   <script src="/dist/braintree-react.js"></script>
   <script type="text/jsx">
-    var BraintreeDropIn = braintreereact.DropIn(window.React);
+    var BraintreeDropIn = braintreereact.DropIn;
 
     React.render(
       <BraintreeDropIn />,
