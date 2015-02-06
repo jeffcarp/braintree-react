@@ -4,7 +4,7 @@
   "description": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "browserify index.js -s btreact > dist/braintree-react.js"
+    "build": "browserify index.js -s braintreereact > dist/braintree-react.js"
   },
   "repository": {
     "type": "git",
