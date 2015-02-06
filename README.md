@@ -1,4 +1,4 @@
-# Braintree DropIn React Component
+# Braintree React Component
 
 Easier than sticking cash in a dirty envelope and mailing it to a company.
 
@@ -10,7 +10,9 @@ First, install via npm:
 npm install braintree-react
 ```
 
-If you're using CommonJS and Browserify or Webpack
+### Drop-In
+
+If you're using CommonJS ([browserify](http://browserify.org/) or [Webpack](http://webpack.github.io/))
 
 ```html
 var DropIn = require('braintree-react').DropIn;
@@ -21,7 +23,7 @@ React.render(
 );
 ```
 
-If you're using a script tag
+If you're not using a module loader
 
 ```html
 <script src="node_modules/braintree-react/dist/braintree-react-standalone.js"></script>
@@ -34,3 +36,15 @@ React.render(
 );
 </script>
 ```
+
+View example integrations [here](examples).
+
+## Notes
+- The use of `jsx` is not required. Both `<Dropin />` and `DropIn()` are valid.
+- Drop-In is currently the only supported integration method.
+  - If there is sufficient interest, we can start building out the custom integration. (Note that since January 2015, using anything other than DropIn means you can no longer be SAQ-A).
+
+## To-Dos
+- [ ] Testing
+- [ ] Allow arbitrary configuration via props
+- [ ] Add Braintree integrations beyond Drop-In (PayPal, Coinbase, etc)
