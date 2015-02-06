@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git@github.braintreeps.com:jeffcarp/braintree-react.git"
   },
-  "author": "",
+  "author": "Braintree <code@braintreepayments.com>",
   "license": "ISC",
   "keywords": [
     "braintree",
