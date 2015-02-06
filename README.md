@@ -2,6 +2,8 @@
 
 Easier than sticking cash into a dirty envelope and mailing it to a company.
 
+[![Build Status](https://travis-ci.org/jeffcarp/braintree-react.svg?branch=master)](https://travis-ci.org/jeffcarp/braintree-react)
+
 ## Usage
 
 First, install via npm:
