@@ -1,0 +1,49 @@
+<html>
+  <head></head>
+  <body>
+    <h1>Test Payment Form</h1>
+    <form action="/transactions" method="GET">
+      <!-- use number 4111 1111 1111 1111 and any exp. date -->
+      <div id="payment-form"></div>
+      <input type="submit" value="I need dis" />
+    </form>
+    <script>
+      if (!Function.prototype.bind) {
+        Function.prototype.bind = function(oThis) {
+          if (typeof this !== 'function') {
+            // closest thing possible to the ECMAScript 5
+            // internal IsCallable function
+            throw new TypeError('Function.prototype.bind - what is trying to be bound is not callable');
+          }
+
+          var aArgs   = Array.prototype.slice.call(arguments, 1),
+          fToBind = this,
+          fNOP    = function() {},
+          fBound  = function() {
+            return fToBind.apply(this instanceof fNOP && oThis
+            ? this
+            : oThis,
+            aArgs.concat(Array.prototype.slice.call(arguments)));
+          };
+
+          fNOP.prototype = this.prototype;
+          fBound.prototype = new fNOP();
+
+          return fBound;
+        };
+      }
+    </script>
+    <script src="/react-with-addons.js"></script>
+    <script src="/JSXTransformer.js"></script>
+
+    <script src="braintree-react.js"></script>
+    <script type="text/jsx">
+      var BraintreeDropIn = braintreereact.DropIn;
+
+      React.render(
+        <BraintreeDropIn />,
+        document.getElementById('payment-form')
+      );
+    </script>
+  </body>
+</html>
