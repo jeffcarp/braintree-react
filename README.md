@@ -39,6 +39,15 @@ React.render(
 </script>
 ```
 
+By default, once Drop-In receives a credit card nonce it submits the outer form. To intercept any nonce, use this callback:
+
+```js
+var nonceReceived = function(event, nonce) {
+  console.log(nonce);
+};
+<DropIn onNonceReceived={nonceReceived} />
+```
+
 View example integrations [here](examples).
 
 ## Notes
