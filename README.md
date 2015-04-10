@@ -40,6 +40,12 @@ React.render(
 </script>
 ```
 
+## Props
+
+### `clientToken`
+The client token used to perform the transaction.
+
+### `onNonceReceived`
 By default, once Drop-In receives a credit card nonce it submits the outer form. To intercept any nonce, use this callback:
 
 ```js
@@ -49,6 +55,14 @@ var nonceReceived = function(event, nonce) {
 <DropIn onNonceReceived={nonceReceived} />
 ```
 
+### `onReady`
+A callback triggered when the DropIn iFrame has been written to the DOM, i.e. it's fully rendered and visible to the user.
+
+### `rootClassName`
+The class name of the outer DOM container.
+*Default*: `__braintree-react__`
+
+## Examples
 View example integrations [here](examples).
 
 ## Notes
