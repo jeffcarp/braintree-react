@@ -33,7 +33,8 @@ var DropIn = ReactInstance.createClass({
   propTypes: {
     clientToken: ReactInstance.PropTypes.string,
     rootClassName: ReactInstance.PropTypes.string,
-    onNonceReceived: ReactInstance.PropTypes.func
+    onNonceReceived: ReactInstance.PropTypes.func,
+    onReady: ReactInstance.PropTypes.func
   },
 
   getDefaultProps: function () {
@@ -57,7 +58,8 @@ var DropIn = ReactInstance.createClass({
       clientToken,
       'dropin', {
         container: this.getDOMNode(),
-        paymentMethodNonceReceived: this.props.onNonceReceived
+        paymentMethodNonceReceived: this.props.onNonceReceived,
+        onReady: this.props.onReady
       }
     );
   },
