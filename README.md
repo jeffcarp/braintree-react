@@ -4,17 +4,23 @@
 
 This is a React component that wraps the Drop-In integration from `braintree-web`. For issues and information concerning `braintree-web` in general, please [see that repo](https://github.com/braintree/braintree-web).
 
-## Usage
-
-First, install via npm:
+## Install
 
 ```bash
 npm install braintree-react
 ```
 
+## Run example
+
+```bash
+npm run example
+```
+
+And visit http://localhost:8000/example.html in your browser.
+
 ### Drop-In
 
-If you're using CommonJS ([browserify](http://browserify.org/) or [Webpack](http://webpack.github.io/))
+If you're using CommonJS ([browserify](http://browserify.org/) or [Webpack](http://webpack.github.io/)):
 
 ```html
 var DropIn = require('braintree-react').DropIn;
@@ -25,7 +31,7 @@ React.render(
 );
 ```
 
-If you're not using a module loader
+If you're not using a module loader:
 
 ```html
 <script src="node_modules/braintree-react/dist/braintree-react-standalone.js"></script>
@@ -60,9 +66,6 @@ A callback triggered when the DropIn iFrame has been written to the DOM, i.e. it
 ### `rootClassName`
 The class name of the outer DOM container.
 *Default*: `__braintree-react__`
-
-## Examples
-View example integrations [here](examples).
 
 ## Notes
 - The use of `jsx` is not required. Both `<Dropin />` and `DropIn()` are valid.

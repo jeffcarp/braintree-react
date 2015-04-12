@@ -7,7 +7,9 @@
     "test": "npm run build && mocha spec/integration",
     "build": "npm run build-cjs && npm run build-standalone",
     "build-standalone": "browserify index.js -s braintreereact -u react > dist/braintree-react.js",
-    "build-cjs": "browserify index.js > dist/braintree-react-cjs.js"
+    "build-cjs": "browserify index.js > dist/braintree-react-cjs.js",
+    "build-example": "browserify example.js > dist/example.js",
+    "example": "npm run build-example && echo 'See http://localhost:8000/example.html - use number 4111111111111111 and any expiration date.' && python -m SimpleHTTPServer"
   },
   "author": "Braintree <code@braintreepayments.com>",
   "license": "ISC",
