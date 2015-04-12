@@ -18,7 +18,7 @@ npm run example
 
 And visit http://localhost:8000/example.html in your browser.
 
-### Drop-In
+## Drop-In
 
 If you're using CommonJS ([browserify](http://browserify.org/) or [Webpack](http://webpack.github.io/)):
 
