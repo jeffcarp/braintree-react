@@ -16,7 +16,7 @@ npm install braintree-react
 npm run example
 ```
 
-And visit http://localhost:8000/example.html in your browser.
+And visit [http://localhost:8000/example.html](http://localhost:8000/example.html) in your browser.
 
 ## Drop-In
 
