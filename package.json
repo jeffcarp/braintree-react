@@ -12,6 +12,10 @@
     "example": "npm run build-example && echo 'See http://localhost:8000/example.html - use number 4111111111111111 and any expiration date.' && python -m SimpleHTTPServer"
   },
   "author": "Braintree <code@braintreepayments.com>",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jeffcarp/braintree-react.git"
+  },
   "license": "ISC",
   "keywords": [
     "braintree",
