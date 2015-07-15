@@ -22,11 +22,12 @@ And visit [http://localhost:8000/example.html](http://localhost:8000/example.htm
 
 If you're using CommonJS ([browserify](http://browserify.org/) or [Webpack](http://webpack.github.io/)):
 
-```html
+```js
 var DropIn = require('braintree-react').DropIn;
+var braintree = require('braintree-web');
 
 React.render(
-  <DropIn />,
+  <DropIn braintree={braintree} />,
   document.getElementById('react-root')
 );
 ```
@@ -35,11 +36,12 @@ If you're not using a module loader:
 
 ```html
 <script src="node_modules/braintree-react/dist/braintree-react-standalone.js"></script>
+<script src="node_modules/braintree-web/dist/braintree.js"></script>
 <script>
 var DropIn = braintreereact.DropIn;
 
 React.render(
-  <DropIn />,
+  <DropIn braintree={braintree} />,
   document.getElementById('react-root')
 );
 </script>
@@ -57,7 +59,7 @@ By default, once Drop-In receives a credit card nonce it submits the outer form.
 var nonceReceived = function(event, nonce) {
   console.log(nonce);
 };
-<DropIn onNonceReceived={nonceReceived} />
+<DropIn braintree={braintree} onNonceReceived={nonceReceived} />
 ```
 
 ### `onReady`

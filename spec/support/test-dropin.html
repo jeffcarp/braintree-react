@@ -35,13 +35,12 @@
     </script>
     <script src="/react-with-addons.js"></script>
     <script src="/JSXTransformer.js"></script>
-
+    <script src="/braintree-web.js"></script>
     <script src="braintree-react.js"></script>
     <script type="text/jsx">
       var BraintreeDropIn = braintreereact.DropIn;
-
       React.render(
-        <BraintreeDropIn />,
+        <BraintreeDropIn braintree={braintree} />,
         document.getElementById('payment-form')
       );
     </script>
