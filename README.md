@@ -1,8 +1,10 @@
-# Braintree React Component [![Build Status](https://travis-ci.org/jeffcarp/braintree-react.svg?branch=master)](https://travis-ci.org/jeffcarp/braintree-react) [![npm version](http://img.shields.io/npm/v/braintree-react.svg?style=flat)](https://www.npmjs.org/package/braintree-react)
+# Braintree React Component 
 
-> _Easier than sticking cash into a dirty envelope and mailing it to a company._
+[![Build Status](https://travis-ci.org/jeffcarp/braintree-react.svg?branch=master)](https://travis-ci.org/jeffcarp/braintree-react) [![npm version](http://img.shields.io/npm/v/braintree-react.svg?style=flat)](https://www.npmjs.org/package/braintree-react)
 
 This is a React component that wraps the Drop-In integration from `braintree-web`. For issues and information concerning `braintree-web` in general, please [see that repo](https://github.com/braintree/braintree-web).
+
+> Disclaimer: `braintree-react` is not an official Braintree module.
 
 ## Install
 
