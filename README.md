@@ -2,6 +2,8 @@
 
 This is a React component that wraps the Drop-In integration from `braintree-web`. For issues and information concerning `braintree-web` in general, please [see that repo](https://github.com/braintree/braintree-web).
 
+> Disclaimer: `braintree-react` is not an official Braintree module.
+
 ## Install
 
 ```bash
@@ -50,14 +52,10 @@ See [JS SDK documentation](https://developers.braintreepayments.com/guides/clien
 ### `rootClassName`
 
 The class name of the outer DOM container.
+
 *Default*: `__braintree-react__`
 
 ## Notes
-- The use of `jsx` is not required. Both `<Dropin />` and `DropIn()` are valid.
-- Drop-In is currently the only supported integration method.
-  - If there is sufficient interest, we can start building out the custom integration. (Note that since January 2015, using anything other than DropIn means you can no longer be SAQ-A).
 
-## To-Dos
-- [x] Testing (sort of)
-- [ ] Allow arbitrary configuration via props
-- [ ] Add Braintree integrations beyond Drop-In (PayPal, Coinbase, etc)
+- Drop-In is currently the only supported integration method.
+  - If there is sufficient interest, we can start building out the custom integration. (Note that as of January 2015, using anything other than DropIn means you can no longer be SAQ A).
