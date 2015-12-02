@@ -6,7 +6,7 @@
   "scripts": {
     "test": "mocha",
     "build-example": "browserify -t reactify example/app.js > example/dist.js",
-    "example": "npm run build-example && echo 'Visit localhost:8000/example - use number 4111111111111111 and any expiration date.' && python -m SimpleHTTPServer"
+    "example": "npm run build-example && echo 'Visit localhost:8000/example .' && python -m SimpleHTTPServer"
   },
   "author": "Braintree <code@braintreepayments.com>",
   "repository": {
