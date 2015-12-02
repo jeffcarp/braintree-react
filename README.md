@@ -1,24 +1,14 @@
-# Braintree React Component 
+# Braintree React Component [![Build Status](https://travis-ci.org/jeffcarp/braintree-react.svg?branch=master)](https://travis-ci.org/jeffcarp/braintree-react) [![npm version](http://img.shields.io/npm/v/braintree-react.svg?style=flat)](https://www.npmjs.org/package/braintree-react)
 
-[![Build Status](https://travis-ci.org/jeffcarp/braintree-react.svg?branch=master)](https://travis-ci.org/jeffcarp/braintree-react) [![npm version](http://img.shields.io/npm/v/braintree-react.svg?style=flat)](https://www.npmjs.org/package/braintree-react)
+> _Easier than sticking cash into a dirty envelope and mailing it to a company._
 
 This is a React component that wraps the Drop-In integration from `braintree-web`. For issues and information concerning `braintree-web` in general, please [see that repo](https://github.com/braintree/braintree-web).
-
-> Disclaimer: `braintree-react` is not an official Braintree module.
 
 ## Install
 
 ```bash
 npm install braintree-react
 ```
-
-## Run example
-
-```bash
-npm run example
-```
-
-And visit [http://localhost:8000/example.html](http://localhost:8000/example.html) in your browser.
 
 ## Drop-In
 
@@ -34,27 +24,14 @@ React.render(
 );
 ```
 
-If you're not using a module loader:
-
-```html
-<script src="node_modules/braintree-react/dist/braintree-react-standalone.js"></script>
-<script src="node_modules/braintree-web/dist/braintree.js"></script>
-<script>
-var DropIn = braintreereact.DropIn;
-
-React.render(
-  <DropIn braintree={braintree} />,
-  document.getElementById('react-root')
-);
-</script>
-```
-
 ## Props
 
 ### `clientToken`
+
 The client token used to perform the transaction.
 
 ### `onNonceReceived`
+
 By default, once Drop-In receives a credit card nonce it submits the outer form. To intercept any nonce, use this callback:
 
 ```js
@@ -65,9 +42,15 @@ var nonceReceived = function(event, nonce) {
 ```
 
 ### `onReady`
+
 A callback triggered when the DropIn iFrame has been written to the DOM, i.e. it's fully rendered and visible to the user.
 
+### `onError`
+
+See [JS SDK documentation](https://developers.braintreepayments.com/guides/client-sdk/javascript/v2#global-setup)
+
 ### `rootClassName`
+
 The class name of the outer DOM container.
 *Default*: `__braintree-react__`
 
