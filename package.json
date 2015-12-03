@@ -20,16 +20,17 @@
     "credit card form",
     "react-component"
   ],
+  "dependencies": {
+    "react": "^0.14.2",
+    "react-dom": "^0.14.2"
+  },
   "devDependencies": {
     "babel-jest": "^6.0.1",
     "braintree-web": "^2.9.0",
     "browserify": "^12.0.1",
     "express": "^4.11.2",
     "jest-cli": "^0.8.0",
-    "mocha": "^2.1.0",
-    "react": "^0.14.2",
     "react-addons-test-utils": "^0.14.2",
-    "react-dom": "^0.14.2",
     "reactify": "^1.1.1",
     "babel-preset-es2015": "*",
     "babel-preset-react": "*"
