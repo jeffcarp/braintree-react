@@ -4,12 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npm run build && mocha spec/integration",
-    "build": "npm run build-cjs && npm run build-standalone",
-    "build-standalone": "browserify index.js -s braintreereact -u react > dist/braintree-react.js",
-    "build-cjs": "browserify index.js > dist/braintree-react-cjs.js",
-    "build-example": "browserify example.js > dist/example.js",
-    "example": "npm run build-example && echo 'See http://localhost:8000/example.html - use number 4111111111111111 and any expiration date.' && python -m SimpleHTTPServer"
+    "test": "jest",
+    "build-example": "browserify -t reactify example/app.js > example/dist.js",
+    "example": "npm run build-example && echo 'Visit localhost:8000/example .' && python -m SimpleHTTPServer"
   },
   "author": "Braintree <code@braintreepayments.com>",
   "repository": {
@@ -23,13 +20,32 @@
     "credit card form",
     "react-component"
   ],
+  "dependencies": {
+    "react": "^0.14.2",
+    "react-dom": "^0.14.2"
+  },
   "devDependencies": {
+    "babel-jest": "^6.0.1",
     "braintree-web": "^2.9.0",
-    "browserify": "^8.1.3",
+    "browserify": "^12.0.1",
     "express": "^4.11.2",
-    "mocha": "^2.1.0",
-    "phantom": "^0.7.2",
-    "phantomjs": "^1.9.15",
-    "react": "^0.12.2"
+    "jest-cli": "^0.8.0",
+    "react-addons-test-utils": "^0.14.2",
+    "reactify": "^1.1.1",
+    "babel-preset-es2015": "*",
+    "babel-preset-react": "*"
+  },
+  "jest": {
+    "testDirectoryName": "test",
+    "scriptPreprocessor": "<rootDir>/node_modules/babel-jest",
+    "unmockedModulePathPatterns": [
+      "<rootDir>/node_modules/react",
+      "<rootDir>/node_modules/react-dom",
+      "<rootDir>/node_modules/react-addons-test-utils",
+      "<rootDir>/node_modules/fbjs"
+    ],
+    "modulePathIgnorePatterns": [
+      "<rootDir>/node_modules/"
+    ]
   }
 }
