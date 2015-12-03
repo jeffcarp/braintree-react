@@ -2,7 +2,7 @@
 
 This is a React component that wraps the Drop-In integration from `braintree-web`. For issues and information concerning `braintree-web` in general, please [see that repo](https://github.com/braintree/braintree-web).
 
-> Disclaimer: `braintree-react` is not an official Braintree module.
+> Disclaimer: this is not an official Braintree module.
 
 ## Install
 
