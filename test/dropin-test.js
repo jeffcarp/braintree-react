@@ -21,7 +21,6 @@ describe('DropIn', () => {
         />
     );
 
-
     const dropinNode = ReactDOM.findDOMNode(dropin);
     expect(dropinNode.className).toEqual('__braintree-react__');
 
