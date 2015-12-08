@@ -6,6 +6,21 @@ const braintree = require('braintree-web');
 const clientToken = require('./dummy-client-token');
 
 const PaymentForm = React.createClass({
+
+  getInitialState: function () {
+    return {
+      show: true
+    };
+  },
+
+  componentWillMount: function () {
+    var self = this;
+    setInterval(function () {
+      self.setState({
+        show: !self.state.show
+      });
+    }, 20e3);
+  },
   
   onReady: function () {
     console.log('Drop-In ready');
@@ -23,17 +38,28 @@ const PaymentForm = React.createClass({
   },
 
   render: function() {
+    var form = (
+        <form action="/transactions" method="POST">
+          <DropIn 
+            braintree={braintree} 
+            clientToken={clientToken}
+            onReady={this.onReady}
+            onError={this.onError}
+            onPaymentMethodReceived={this.onPaymentMethodReceived}  
+            />
+          <input type="submit" value="Buy for $14" />
+        </form>
+    );
+
+    if (!this.state.show) {
+      form = null;
+    }
+
     return (
-      <form action="/transactions" method="POST">
-        <DropIn 
-          braintree={braintree} 
-          clientToken={clientToken}
-          onReady={this.onReady}
-          onError={this.onError}
-          onPaymentMethodReceived={this.onPaymentMethodReceived}  
-          />
-        <input type="submit" value="Buy for $14" />
-      </form>
+      <div>
+        <p>{this.state.show ? 'show' : 'hide'}</p>
+        {form}
+      </div>
     );
   }
 });
