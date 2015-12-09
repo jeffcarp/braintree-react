@@ -30,16 +30,18 @@ React.render(
 
 The client token used to perform the transaction.
 
-### `onNonceReceived`
+### `onPaymentMethodReceived`
 
 By default, once Drop-In receives a credit card nonce it submits the outer form. To intercept any nonce, use this callback:
 
 ```js
-var nonceReceived = function(event, nonce) {
+var nonceReceived = function (payload) {
   console.log(nonce);
 };
-<DropIn braintree={braintree} onNonceReceived={nonceReceived} />
+<DropIn braintree={braintree} onPaymentMethodReceived={nonceReceived} />
 ```
+
+[See `onPaymentMethodReceived` in Braintree docs](https://developers.braintreepayments.com/guides/client-sdk/javascript/v2#global-setup)
 
 ### `onReady`
 
