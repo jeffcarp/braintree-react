@@ -26,9 +26,13 @@ React.render(
 
 ## Props
 
-### `clientToken`
+### `braintree` (required)
 
-The client token used to perform the transaction.
+This should be `braintree-web`.
+
+### `clientToken` (required)
+
+The client token used to set up the integration. Learn [how to generate a client token](https://developers.braintreepayments.com/start/hello-server#generate-a-client-token).
 
 ### `onPaymentMethodReceived`
 
