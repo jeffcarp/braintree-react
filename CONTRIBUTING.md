@@ -1,7 +1,6 @@
 # Deploy checklist
 
 - `npm test`
-- If any changes, commit built file separately
 - Bump version in `package.json`
 - `git add package.json`
 - `git commit -m "Version 0.0.0"`
