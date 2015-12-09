@@ -1,7 +1,7 @@
 {
   "name": "braintree-react",
-  "version": "2.0.0",
-  "description": "",
+  "version": "3.0.0",
+  "description": "A React component for Braintree Drop-In",
   "main": "index.js",
   "scripts": {
     "test": "jest",
