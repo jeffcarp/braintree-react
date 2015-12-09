@@ -1,4 +1,4 @@
-# 3.0.0 - December 2015
+# `3.0.0` - December 2015
 
 - The `clientToken` prop is now required. `DropIn` will no longer fall back to using a fake client token.
 - Removed the ability to rely on `window.react` - you now must use CommonJS to build `braintree-react`.
