@@ -1,3 +1,7 @@
+### `3.0.1` - December 2015
+
+- Replace `const` with `var` to obviate need for a transpiler [#18](https://github.com/jeffcarp/braintree-react/pull/18) (christensena)
+
 # `3.0.0` - December 2015
 
 - The `clientToken` prop is now required. `DropIn` will no longer fall back to using a fake client token.
