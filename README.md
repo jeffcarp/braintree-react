@@ -10,6 +10,13 @@ This is a React component that wraps the Drop-In integration from `braintree-web
 npm install braintree-react
 ```
 
+## Run the example
+
+```bash
+# Clone project and cd into it
+npm run example
+```
+
 ## Drop-In
 
 If you're using CommonJS ([browserify](http://browserify.org/) or [Webpack](http://webpack.github.io/)):
