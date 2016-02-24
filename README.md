@@ -69,8 +69,3 @@ See [JS SDK documentation](https://developers.braintreepayments.com/guides/clien
 The class name of the outer DOM container.
 
 *Default*: `__braintree-react__`
-
-## Notes
-
-- Drop-In is currently the only supported integration method.
-  - If there is sufficient interest, we can start building out the custom integration. (Note that as of January 2015, using anything other than DropIn means you can no longer be SAQ A).
