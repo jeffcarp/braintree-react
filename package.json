@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "build-example": "browserify -t reactify example/app.js > example/dist.js",
-    "example": "npm run build-example && echo 'Visit localhost:8000/example .' && python -m SimpleHTTPServer"
+    "preexample": "browserify -t reactify example/app.js > example/dist.js",
+    "example": "echo 'Visit localhost:8000/example .' && python -m SimpleHTTPServer"
   },
   "author": "Braintree <code@braintreepayments.com>",
   "repository": {
