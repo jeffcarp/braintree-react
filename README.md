@@ -2,7 +2,12 @@
 
 This is a React component that wraps the Drop-In integration from `braintree-web`. For issues and information concerning `braintree-web` in general, please see [`braintree/braintree-web`](https://github.com/braintree/braintree-web).
 
-![Example screenshot](https://raw.githubusercontent.com/jeffcarp/braintree-react/master/example/bt-react-example.png)
+<p align="center">
+  <img 
+    alt="braintree-react example" src="https://raw.githubusercontent.com/jeffcarp/braintree-react/master/example/bt-react-example.png" 
+    width="417" />
+</p>
+
 
 > Disclaimer: this is not an official Braintree module.
 
