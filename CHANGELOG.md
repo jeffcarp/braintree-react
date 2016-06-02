@@ -1,3 +1,11 @@
+### 3.2.0 -- June 2, 2016
+
+- Makes work with React v15 [#29](https://github.com/jeffcarp/braintree-react/pull/29) (pitluga)
+- Add `onError` prop and implementation (christensena)
+- Fix a couple unmount bugs
+  - Added `.bind(this)` to fix `this` bug in teardown (christensena)
+  - Set `braintreeInitialized` back to false after teardown (I'm not sure if this was causing problems but it was a logic error)
+
 ### `3.1.0` - May 2016
 
 - Add `defaultFirst` prop [#27](https://github.com/jeffcarp/braintree-react/pull/27) (goodslav)
