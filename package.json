@@ -22,18 +22,18 @@
     "react-component"
   ],
   "dependencies": {
-    "react": "^0.14.2",
-    "react-dom": "^0.14.2"
+    "react": "^15.1.0",
+    "react-dom": "^15.1.0"
   },
   "devDependencies": {
-    "babel-jest": "^6.0.1",
+    "babel-jest": "^12.1.0",
     "babel-preset-es2015": "*",
     "babel-preset-react": "*",
     "braintree-web": "^2.9.0",
     "browserify": "^12.0.1",
     "express": "^4.11.2",
-    "jest-cli": "^0.8.0",
-    "react-addons-test-utils": "^0.14.2",
+    "jest-cli": "^12.1.1",
+    "react-addons-test-utils": "^15.1.0",
     "reactify": "^1.1.1",
     "standard": "^7.0.1"
   },
