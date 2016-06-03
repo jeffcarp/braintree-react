@@ -1,3 +1,7 @@
+### 3.2.1 -- June 3, 2016
+
+- Update dependencies for React v15 (pitluga)
+
 ### 3.2.0 -- June 2, 2016
 
 - Makes work with React v15 [#29](https://github.com/jeffcarp/braintree-react/pull/29) (pitluga)
