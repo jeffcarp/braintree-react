@@ -68,6 +68,10 @@ A callback triggered when the DropIn iFrame has been written to the DOM, i.e. it
 
 See [JS SDK documentation](https://developers.braintreepayments.com/guides/client-sdk/javascript/v2#global-setup)
 
+### `paypal`
+
+See [JS SDK documentation](https://developers.braintreepayments.com/reference/client-reference/javascript/v2/paypal)
+
 ### `rootClassName`
 
 The class name of the outer DOM container.
