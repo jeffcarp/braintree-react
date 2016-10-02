@@ -6,6 +6,8 @@
     width="417" />
 </p>
 
+> :rotating_light: Warning! This module is based on braintree-web v2. Now that v3 is out, please consider [using it instead](https://developers.braintreepayments.com/guides/client-sdk/setup/javascript/v3).
+
 This is a React component that wraps the Drop-In integration from `braintree-web`. For issues and information concerning `braintree-web` in general, please see [`braintree/braintree-web`](https://github.com/braintree/braintree-web).
 
 > Disclaimer: this is not an official Braintree module.
