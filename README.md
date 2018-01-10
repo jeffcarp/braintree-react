@@ -1,6 +1,6 @@
-:rotating_light: This module is no longer maintained. An updated version can be found at [Cretezy/braintree-web-drop-in-react](https://github.com/cretezy/braintree-web-drop-in-react) :rotating_light:
+# :rotating_light: This module is no longer maintained! Do not use it! :rotating_light:
 
-> You can refer to the [braintree-web v3 docs](https://developers.braintreepayments.com/guides/client-sdk/setup/javascript/v3) to get started without a library.
+For an alternative you can use an [updated version of this library](https://github.com/cretezy/braintree-web-drop-in-react) or the vanilla [Braintree JavaScript SDK](https://developers.braintreepayments.com/guides/drop-in/overview/javascript/v3).
 
 ----------
 
